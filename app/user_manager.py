@@ -6,7 +6,7 @@ class UserManager:
         if not username:
             raise ValueError("Nom obligatoire")
         if username in self.users:
-            raise ValueError("Existe déjà")
+            raise ValueError("Existe deja")
         self.users.append(username)
 
     def count_users(self):
